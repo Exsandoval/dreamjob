@@ -1,3 +1,30 @@
+.top-wrapper{
+  height:200px;
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+.bottom-wrapper{
+  height: 600px;
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.about p{
+  position: relative;
+  top:50%;
+  transform: translateY(-50%);
+}
+.about h2{
+  position: relative;
+  top:40%;
+  transform: translateY(-50%);
+}
+
+
+
 body {
   background-image: url();
   background-color: white;
@@ -8,16 +35,12 @@ body {
 .input-field {
   background-color: whitesmoke;
   opacity: .8;
-  margin-bottom: 100px;
-  margin-left: 210px;
-  margin-top: 150px;
   color: #555;
   font-family: 'Nunito', sans-serif;
   font-size: 20px;
   text-align: center;
   width: 270px;
   height: 65px;
-  top: 0px;
   border-radius: 5px;
 }
 
@@ -34,14 +57,12 @@ body {
   color: black;
   font-family: 'Nunito', sans-serif;
   font-size: 20px;
-  border-width: 2px;
   text-align: center;
   background-color: white;
   height: 600px;
-  width: 40vw;
-  margin-left:30vw;
-  margin-bottom: 0px;
+  width:33%;
   text-transform: uppercase;
+  order: 2;
 }
 
 .products {
@@ -50,16 +71,13 @@ body {
   background-size: cover;
   background-position: center;
   text-transform: uppercase;
-  font-size: 40px;
+  font-size: 20px;
   font-family: 'Nunito', sans-serif;
-  border-style: solid;
-  border-color: whitesmoke;
-  border-width: 2px;
   text-align: center;
   background-color: white;
   height: 600px;
-  width: 100vw;
-  margin-bottom: 0px;
+  width:33%;
+  order: 1;
 }
 .mission {
   color:white;
@@ -67,17 +85,13 @@ body {
   background-size: cover;
   background-position: center;
   text-transform: uppercase;
-  font-size: 40px;
+  font-size: 20px;
   font-family: 'Nunito', sans-serif;
-  border-style: solid;
-  border-color: whitesmoke;
-  border-width: 2px;
   text-align: center;
   background-color: white;
   height: 600px;
-  width: 100vw;
-  margin-bottom: 0px;
-
+  width:33%;
+  order: 3;
 }
 h1{
   position: relative;
