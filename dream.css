@@ -34,6 +34,18 @@ body {
   width: 100vw;
 }
 
+.submit{
+  background-color: red;
+  opacity: .8;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  width: 100px;
+  height: 65px;
+  border-radius: 5px;
+}
+
 .input-field {
   background-color: whitesmoke;
   opacity: .8;
