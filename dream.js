@@ -9,10 +9,11 @@
 var emailInput,nameInput,dreamJobInput;
 document.querySelector('.submit').addEventListener('click', function(){
   nameInput = document.getElementById('name').value;
-if (nameInput) {
-  console.log(nameInput);
+  emailInput = document.getElementById('email').value;
+  dreamJobInput = document.getElementById('dream').value;
+if (emailInput && nameInput && dreamJobInput)  {
+  console.log(nameInput, emailInput, dreamJobInput);
 }else{
-  alert('missing name');
+  alert('Please fill in all fields');
 }
- //if (emailInput && nameInput && dreamJobInput) {
 })

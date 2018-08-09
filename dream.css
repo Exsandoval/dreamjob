@@ -1,7 +1,18 @@
+.header{
+  z-index: 10;
+  position: fixed;
+  background-color: white;
+  height: 50px;
+  width: 100vw;
+  display:flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
 .top-wrapper{
-  margin-top: 80px;
   background-image: linear-gradient(135deg,#ff690f 5%,#4169E1 95%);
-  height: 130px;
+  height: 160px;
   display:flex;
   align-items: center;
   justify-content: space-around;
@@ -9,11 +20,11 @@
 
 }
 .bottom-wrapper{
-  height: 600px;
+  height: 100vh;
   display:flex;
   width: 100vw;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .about p{
@@ -35,8 +46,24 @@ body {
   height: 100vh;
   width: 100vw;
 }
+.header-button{
+  background-color: white;
+  outline: none;
+  color: black;
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  width: 70px;
+  height: 100%;
+  border-style: none;
+  border-radius: 2px;
+}
+.header-button:hover{
+  color: royalblue;
+}
 
 .submit{
+  margin-top: 50px;
   background-color: whitesmoke;
   opacity: .9;
   color: black;
@@ -48,10 +75,14 @@ body {
   border-style: none;
   border-radius: 2px;
 }
+.submit:hover{
+  color: royalblue;
+}
 .input-field::placeholder{
   color: black;
 }
 .input-field {
+  margin-top: 50px;
   background-color: whitesmoke;
   opacity: .5;
   color: black;
@@ -80,7 +111,7 @@ body {
   background-color: white;
   height: 600px;
   text-transform: uppercase;
-  width: 500px;
+  width: 100vw;
   order: 2;
 }
 
@@ -95,7 +126,7 @@ body {
   text-align: center;
   background-color: white;
   height: 600px;
-  width: 500px;
+  width: 100vw;
   order: 1;
 }
 .mission {
@@ -109,7 +140,7 @@ body {
   text-align: center;
   background-color: white;
   height: 600px;
-  width:500px;
+  width: 100vw;
   order: 3;
 }
 h1{
