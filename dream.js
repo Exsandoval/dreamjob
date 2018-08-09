@@ -8,11 +8,11 @@
 
 var emailInput,nameInput,dreamJobInput;
 document.querySelector('.submit').addEventListener('click', function(){
-if (nameInput) {
   nameInput = document.getElementById('name').value;
+if (nameInput) {
   console.log(nameInput);
 }else{
-  console.log('nothing');
+  alert('missing name');
 }
  //if (emailInput && nameInput && dreamJobInput) {
 })
