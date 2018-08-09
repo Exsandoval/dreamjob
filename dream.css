@@ -1,5 +1,7 @@
 .top-wrapper{
-  height: 300px;
+  margin-top: 80px;
+  background-image: linear-gradient(135deg,#ff690f 5%,#4169E1 95%);
+  height: 130px;
   display:flex;
   align-items: center;
   justify-content: space-around;
@@ -11,7 +13,7 @@
   display:flex;
   width: 100vw;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .about p{
@@ -35,27 +37,30 @@ body {
 }
 
 .submit{
-  background-color: red;
-  opacity: .8;
+  background-color: whitesmoke;
+  opacity: .9;
+  color: black;
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  width: 85px;
+  height: 54px;
+  border-style: none;
+  border-radius: 2px;
+}
+.input-field::placeholder{
+  color: black;
+}
+.input-field {
+  background-color: whitesmoke;
+  opacity: .5;
   color: white;
   font-family: 'Nunito', sans-serif;
   font-size: 20px;
   text-align: center;
-  width: 100px;
-  height: 65px;
-  border-radius: 5px;
-}
-
-.input-field {
-  background-color: whitesmoke;
-  opacity: .8;
-  color: #555;
-  font-family: 'Nunito', sans-serif;
-  font-size: 20px;
-  text-align: center;
-  width: 270px;
-  height: 65px;
-  border-radius: 5px;
+  width: 255px;
+  height: 54px;
+  border-radius: 2px;
 }
 
 .input-field:focus {
@@ -111,4 +116,29 @@ h1{
   position: relative;
   top:50%;
   transform: translateY(-50%);
+}
+@media screen and (max-width: 1000px) {
+  .top-wrapper{
+    margin-top: 80px;
+    background-image: linear-gradient(135deg,#ff690f 5%,#4169E1 95%);
+    height: 300px;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+    .submit{
+      background-color: whitesmoke;
+      opacity: .9;
+      color: black;
+      font-family: 'Nunito', sans-serif;
+      font-size: 20px;
+      text-align: center;
+      width: 255px;
+      height: 54px;
+      border-style: none;
+      border-radius: 2px;
+
+  }
+
 }
